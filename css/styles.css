@@ -1,0 +1,22 @@
+header{
+  padding: 20px 10px;
+  background-color: beige; 
+}
+
+header span.logo{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: block;
+}
+
+header span#btn-menu{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: block;
+}
+
+section.full-height{
+  height: calc(100vh);
+}
