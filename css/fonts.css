@@ -1,0 +1,47 @@
+/* Webfont: MinionPro-It */@font-face {
+  font-family: 'MinionPro';
+  src: url('MinionPro-It.eot'); /* IE9 Compat Modes */
+  src: url('MinionPro-It.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('MinionPro-It.woff') format('woff'), /* Modern Browsers */
+       url('MinionPro-It.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('MinionPro-It.svg#MinionPro-It') format('svg'); /* Legacy iOS */
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CircularProTT-BoldItalic */@font-face {
+  font-family: 'CircularProTTBoldItalic';
+  src: url('CircularProTT-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('CircularProTT-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularProTT-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('CircularProTT-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('CircularProTT-BoldItalic.svg#CircularProTT-BoldItalic') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CircularProTT-Bold */@font-face {
+  font-family: 'CircularProTTBold';
+  src: url('CircularProTT-Bold.eot'); /* IE9 Compat Modes */
+  src: url('CircularProTT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularProTT-Bold.woff') format('woff'), /* Modern Browsers */
+       url('CircularProTT-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('CircularProTT-Bold.svg#CircularProTT-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CircularProTT-BookItalic */@font-face {
+  font-family: 'CircularProTTBookItalic';
+  src: url('CircularProTT-BookItalic.eot'); /* IE9 Compat Modes */
+  src: url('CircularProTT-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularProTT-BookItalic.woff') format('woff'), /* Modern Browsers */
+       url('CircularProTT-BookItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('CircularProTT-BookItalic.svg#CircularProTT-BookItalic') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
