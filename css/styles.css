@@ -1,6 +1,57 @@
+/* Webfont: MinionPro-It */@font-face {
+  font-family: 'MinionPro';
+  src: url('../fonts/MinionPro-It.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MinionPro-It.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MinionPro-It.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/MinionPro-It.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MinionPro-It.svg#MinionPro-It') format('svg'); /* Legacy iOS */
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CircularProTT-BoldItalic */@font-face {
+  font-family: 'CircularProTTBoldItalic';
+  src: url('../fonts/CircularProTT-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CircularProTT-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CircularProTT-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/CircularProTT-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CircularProTT-BoldItalic.svg#CircularProTT-BoldItalic') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CircularProTT-Bold */@font-face {
+  font-family: 'CircularProTTBold';
+  src: url('../fonts/CircularProTT-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CircularProTT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CircularProTT-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/CircularProTT-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CircularProTT-Bold.svg#CircularProTT-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: CircularProTT-BookItalic */@font-face {
+  font-family: 'CircularProTTBookItalic';
+  src: url('../fonts/CircularProTT-BookItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CircularProTT-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CircularProTT-BookItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/CircularProTT-BookItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CircularProTT-BookItalic.svg#CircularProTT-BookItalic') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 header{
   padding: 20px 10px;
-  background-color: beige; 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 header span.logo{
@@ -11,12 +62,30 @@ header span.logo{
 }
 
 header span#btn-menu{
-  width: 20px;
-  height: 20px;
-  background-color: red;
+  width: 26px;
+  height: 21px;
+  background: url("../img/btn-menu-w.png");
+  background-size: 100%;
   display: block;
+  cursor: pointer;
 }
 
 section.full-height{
-  height: calc(100vh);
+  height: calc(100vh - 60px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#hero{
+  background-color: #282C3F;
+}
+
+section#hero h2{
+  background-image: url("../img/logo.png");
+  text-indent: -9999px;
+  width:250px;
+  height: 100px;
+  background-size: 100%
 }
