@@ -1,0 +1,12 @@
+/* Webfont: CircularProTT-Book */@font-face {
+    font-family: 'CircularProTTBook';
+    src: url('CircularProTT-Book.eot'); /* IE9 Compat Modes */
+    src: url('CircularProTT-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CircularProTT-Book.woff') format('woff'), /* Modern Browsers */
+         url('CircularProTT-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('CircularProTT-Book.svg#CircularProTT-Book') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

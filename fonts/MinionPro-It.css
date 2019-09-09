@@ -1,0 +1,12 @@
+/* Webfont: MinionPro-It */@font-face {
+    font-family: 'MinionPro';
+    src: url('MinionPro-It.eot'); /* IE9 Compat Modes */
+    src: url('MinionPro-It.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('MinionPro-It.woff') format('woff'), /* Modern Browsers */
+         url('MinionPro-It.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('MinionPro-It.svg#MinionPro-It') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

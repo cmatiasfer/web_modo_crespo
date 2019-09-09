@@ -10,6 +10,19 @@
   text-rendering: optimizeLegibility;
 }
 
+/* Webfont: CircularProTT-Book */@font-face {
+  font-family: 'CircularProTTBook';
+  src: url('../fonts/CircularProTT-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CircularProTT-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/CircularProTT-Book.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/CircularProTT-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/CircularProTT-Book.svg#CircularProTT-Book') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
 /* Webfont: CircularProTT-BoldItalic */@font-face {
   font-family: 'CircularProTTBoldItalic';
   src: url('../fonts/CircularProTT-BoldItalic.eot'); /* IE9 Compat Modes */
@@ -46,6 +59,18 @@
   text-rendering: optimizeLegibility;
 }
 
+/* 
+PALETTE COLOR  
+BLUE : 282C3F
+menuopen : F7EDED
+*/
+body{
+  background-color: #F7EDED;
+}
+a:hover,a:focus{
+  color: #282C3F;
+}
+
 header{
   padding: 20px 10px;
   width: 100%;
@@ -71,7 +96,7 @@ header span#btn-menu{
 }
 
 section.full-height{
-  height: calc(100vh - 60px);
+  height: calc(100vh - 100px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -88,4 +113,382 @@ section#hero h2{
   width:250px;
   height: 100px;
   background-size: 100%
+}
+
+footer{
+  background-color: #FFF;
+  padding: 20px 142px;
+}
+
+footer .container-fluid > div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+footer a,footer span {
+  font-family: 'CircularProTTBook';
+  font-size: 12px;
+  font-weight: normal;
+  color: #282C3F;
+  display: block;
+}
+
+footer h3 {
+  font-family: 'CircularProTTBook';
+  font-size: 8px;
+  font-weight: normal;
+  color: #282C3F;
+}
+
+
+footer .border-r{
+  border-right: 1px solid  #282C3F;
+}
+
+footer .b-mini-logo > a {
+  background: url(../img/mini-logo.png);
+  width: 34px;
+  height: 35px;
+  background-size: 100%;
+  margin-right: 45px;
+  
+}
+
+footer .b-locations,
+footer .b-data {
+  padding: 14px 45px;
+  align-items: center;
+}
+/* BOX LOCATIONS */
+footer .b-locations .dire{
+  display: inline-block;
+}
+/* BOX DATA */
+footer .b-data{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer .b-data > div{
+  margin: 0px;
+}
+footer .b-data i.fb{
+  margin-right: 10px;
+  display: inline-block;
+  background: url(../img/fb.png);
+  width: 19px;
+  height: 19px;
+  background-size: 100%;
+  
+}
+
+footer .b-data i.ig{
+  display: inline-block;
+  background: url(../img/ig.png);
+  width: 19px;
+  height: 19px;
+  background-size: 100%;
+}
+/* BOX PARTNERS */
+footer .b-partners > div {
+  margin-left: 30px;
+}
+
+footer .b-partners .partner-proy{
+  background: url(../img/logo-proy.png);
+  width: 47px;
+  height: 33px;
+  background-size: 100%;
+}
+
+footer .b-partners .partner-des{
+  background: url(../img/logo-des.png);
+  width: 40px;
+  height: 33px;
+  background-size: 100%;
+}
+
+footer .b-partners .partner-com{
+  background: url(../img/logo-com.png);
+  width: 63px;
+  height: 24px;
+  background-size: 100%;
+}
+
+/* MAIN BG IMAGE */
+.main-bg-image{
+  height: calc(100vh - 104px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.main-bg-image .filter{
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 10;
+}
+
+.main-bg-image .title{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* CONTENT */
+.content{
+  padding: 0px 70px;
+}
+
+/* MAIN TEXT */
+.main-text {
+  margin-bottom: 60px;
+}
+.main-text p {
+  font-family: 'CircularProTTBook';
+  font-size: 22px;
+  font-weight: normal;
+  color: #282C3F;
+  display: block;
+  text-align: center;
+}
+.main-text .line {
+  background-color: #282C3F;
+  width: 66px;
+  height: 1px;
+  display: block;
+  margin: 30px auto 30px auto;
+}
+.main-text p.desc {
+  font-family: 'CircularProTTBook';
+  font-size: 24px;
+  font-weight: normal;
+  color: #282C3F;
+  display: block;
+  text-align: center;
+}
+/* IMG FLUID */
+.img-fluid{
+  display: block;
+  width: 100%;
+}
+.only-img {
+  margin-bottom: 60px;
+}
+
+/* CONTENT IMAGE TEXT */
+.content-img-text {
+  margin-bottom: 60px;
+}
+
+.content-img-text .col-text {
+  padding-left: 50px;
+  height: 100%;
+}
+
+.content-img-text .col-text span.line {
+  background-color: #282C3F;
+  width: 66px;
+  height: 1px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.content-img-text .col-text p {
+  font-family: 'CircularProTTBook';
+  font-size: 18px;
+  font-weight: normal;
+}
+/* FULL LINE */
+.full-line {
+  width: 100%;
+  height: 1px;
+  background-color: #282C3F;
+  margin-bottom: 60px;
+  display: block;
+}
+/* img-with-title */
+.img-with-title{
+  margin-bottom: 20px;
+}
+/* title img */
+.title-img {
+  font-family: 'MinionPro';
+  font-size: 22px;
+  font-weight: normal;
+  color: #282C3F
+}
+
+/* UBICACION */
+#ubicacion .main-bg-image .title h2{
+  text-indent: -9999px;
+  width: 286px;
+  height: 45px;
+  background-image: url(../img/ubicacion/title-section.png);
+  background-size: 100%;
+  text-transform: capitalize;
+}
+
+.phrase {
+  font-family: 'CircularProTTBookItalic';
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ubi-grid {
+  margin-bottom: 60px;
+}
+
+.gmap{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #282C3F
+}
+
+/* EDIFICIOS */
+#edificios .main-bg-image .title h2{
+  text-indent: -9999px;
+  width: 358px;
+  height: 37px;
+  background-image: url(../img/edificios/title-section.png);
+  background-size: 100%;
+  text-transform: capitalize;
+}
+#edificios .grid-edificios {
+  margin-bottom: 30px;
+}
+
+#edificios .grid-edificios img {
+  margin-bottom: 60px;
+}
+#edificios .grid-edificios span {
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-family: 'CircularProTTBook';
+  font-size: 22px;
+  font-weight: normal;
+}
+/* UNIDADES */
+#unidades .main-bg-image .title h2{
+  text-indent: -9999px;
+  width: 362px;
+  height: 37px;
+  background-image: url(../img/unidades/title-section.png);
+  background-size: 100%;
+  text-transform: capitalize;
+}
+/* AMENITIES */
+#amenities .main-bg-image .title h2{
+  text-indent: -9999px;
+  width: 278px;
+  height: 37px;
+  background-image: url(../img/amenities/title-section.png);
+  background-size: 100%;
+  text-transform: capitalize;
+}
+
+#amenities .feature {
+  margin-bottom: 60px;
+}
+#amenities .feature .list{
+  padding: 20px 30px;
+  border: 1px solid #282C3F;
+}
+
+#amenities .feature .list p{
+  font-family: 'CircularProTTBook';
+  font-size: 22px;
+  font-weight: normal;
+  color:#282C3F;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+.title-img.mb-space {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+/* CONTACTO */
+#contacto {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #282C3F;
+  padding: 80px 0px;
+}
+#contacto .content-form {
+	width: 500px;
+	height: 100%;
+	margin: auto;
+}
+#contacto form {
+  display: inline-block;
+  width: 100%;
+}
+#contacto form input,
+#contacto form textarea {
+  font-family: 'CircularProTTBook';
+  font-size: 22px;
+  font-weight: normal;
+  width: 100%;
+  border: 0;
+  border-bottom: solid 1px #FFF;
+  display: block;
+  background: inherit;
+  outline: none;
+  color: #FFF;
+  -webkit-appearance: none;
+	border-radius: 0;
+	text-align: center;
+	margin-bottom: 35px;
+	resize: none;
+}
+#contacto form input::placeholder,
+#contacto form textarea::placeholder {
+  color: #FFF;
+  text-align: center
+}
+
+#contacto form input:-ms-input-placeholder,
+#contacto form textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #FFF;
+  text-align: center
+}
+
+#contacto form input::-ms-input-placeholder,
+#contacto form textarea::-ms-input-placeholder { /* Microsoft Edge */
+	color: #FFF;
+	text-align: center
+}
+
+#contacto form p {
+	margin-bottom: 40px;
+	color: #FFF;
+	text-align: center;
+	font-family: 'MinionPro';
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#contacto form button {
+	display: block;
+	margin: auto;
+	-webkit-appearance: button;
+	cursor: pointer;
+	border: 1px solid white;
+	outline: none;
+	background: inherit;
+	color: #FFF;
+	padding: 10px 20px;
 }
