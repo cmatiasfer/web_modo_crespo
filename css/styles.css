@@ -76,14 +76,14 @@ header{
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 50;
+  transition: .5s ease all;
 }
 
 header span.logo{
   width: 20px;
-  height: 20px;
-  background-color: red;
-  display: block;
+  height: 51px;
+  opacity: 0;
 }
 
 header span#btn-menu{
@@ -94,6 +94,73 @@ header span#btn-menu{
   display: block;
   cursor: pointer;
 }
+
+header span#btn-close{
+  width: 22px;
+  height: 22px;
+  background: url("../img/btn-close-b.png");
+  background-size: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+header.mode-stick {
+  background-color: #FFF;
+  transition: .5s ease all;
+}
+
+header.mode-stick .logo {
+  opacity: 1;
+  width: 128px;
+  height: 51px;
+  background: url("../img/logo-navbar.png");
+  background-size: 100%;
+  margin-left: -79px;
+}
+
+header.mode-stick #btn-menu {
+  width: 26px;
+  height: 21px;
+  background: url("../img/btn-menu-b.png");
+  background-size: 100%;
+}
+
+.menu-full {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+  z-index: 30;
+  transition: .5s ease all;
+  background-color: #F7EDED;
+  position: fixed;
+  top:0;
+  transition: .5s ease all;
+}
+
+.menu-full.close{
+  left: 100vw;
+}
+
+.menu-full.open{
+  left: 0;  
+} 
+
+.menu-full nav {
+  text-align: center;
+}
+
+.menu-full nav a{
+  font-family: 'CircularProTTBook';
+  font-size: 32px;
+  font-weight: normal;
+  color: #282C3F;
+  display: block;
+}
+/* nav.open{
+  top:0;
+  left: 0;
+  transition: .5 ease all;
+} */
 
 section.full-height{
   height: calc(100vh - 100px);
