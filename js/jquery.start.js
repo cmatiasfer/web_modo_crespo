@@ -17,15 +17,13 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '#btn-close', function () {
-
         resolveStatusHeader();
-
-        $(".menu-full").removeClass('open');
-        $(".menu-full").addClass('close');
-
-        $(this).replaceWith('<span id="btn-menu"></span>');
+        closeMenu();
     });
 
+    $(document).on('click', 'nav a', function () {
+        closeMenu();
+    });
 });
 
 function resolveStatusHeader() {
@@ -37,4 +35,11 @@ function resolveStatusHeader() {
     } else {
         $("header").attr('class', 'mode-stick');
     }
+}
+
+function closeMenu() {
+    $(".menu-full").removeClass('open');
+    $(".menu-full").addClass('close');
+
+    $("header").find("#btn-close").replaceWith('<span id="btn-menu"></span>');
 }
