@@ -94,10 +94,35 @@ $(document).ready(function () {
                 var loading = isLoading();
                 $('.response').css('height', height);
                 $('.response').html(loading);
+
+                var contactName = $('#form-contact #Name').val();
+                var contactTelefono = $('#form-contact #Phone').val();
+                var contactEmail = $('#form-contact #Email').val();
+                var contactMessage = $('#form-contact #Msg').val();
+
+                var data = 'Name=' + contactName + '&Phone=' + contactTelefono + '&Email=' + contactEmail + '&Msg=' + contactMessage;
                 setTimeout(function () {
-                    $('.response').html('<p>Muchas gracias! a la brevedad nos pondremos en contacto con usted!</p>');
-                    $('.response').show();
-                }, 3000);
+                    $.ajax({
+                        type: "POST",
+                        url: "ajax_email.php",
+                        data: data,
+                        dataType: 'json',
+                        success: function (ret) {
+                            // Message was sent
+                            if (ret.status == 'OK') {
+                                $('.response').html('<p>Muchas gracias! a la brevedad nos pondremos en contacto con usted!</p>');
+                                $('.response').show();
+                            }
+
+                            // There was an error
+                            else {
+                                console.log('error');
+                                // $('#gracias').html(ret.msg).animate({ 'opacity': 1 }, 500);
+                            }
+                        }
+                    });
+
+                }, 800);
                 return false;
             }
         });
