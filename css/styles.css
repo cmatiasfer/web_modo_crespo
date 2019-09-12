@@ -789,6 +789,18 @@ footer .b-partners .partner-com{
 }
 /* MEDIUM */
 @media (min-width: 576px) and (max-width: 768px) {
+  .text-mobile {
+		padding: 0px 40px;
+		text-align: center;
+  }
+  
+  .content-img-text .col-text span.line{
+		margin-left: auto;
+    margin-right: auto;
+		margin-top: 40px;
+		margin-bottom: 20px;
+  }
+  
   section.full-height{
 		height: calc(100vh - 256px);
 	}
