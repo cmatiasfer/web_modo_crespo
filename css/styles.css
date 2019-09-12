@@ -612,6 +612,11 @@ footer .b-partners .partner-com{
 	padding: 10px 20px;
 }
 
+#contacto .response {
+  display: flex;
+  align-items: center;
+}
+
 #contacto .response p {
   font-family: 'CircularProTTBook';
   font-size: 22px;

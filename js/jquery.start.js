@@ -89,16 +89,16 @@ $(document).ready(function () {
             submitHandler: function (form) {
                 $('button.send').text('Sending...');
                 $('button.send').attr('disabled', true);
-                var height = $('.form').height();
+                var height = $('#form-contacto').height();
                 $('#form-contacto').hide();
                 var loading = isLoading();
                 $('.response').css('height', height);
                 $('.response').html(loading);
 
-                var contactName = $('#form-contact #Name').val();
-                var contactTelefono = $('#form-contact #Phone').val();
-                var contactEmail = $('#form-contact #Email').val();
-                var contactMessage = $('#form-contact #Msg').val();
+                var contactName = $('#form-contacto #Name').val();
+                var contactEmail = $('#form-contacto #Email').val();
+                var contactTelefono = $('#form-contacto #Phone').val();
+                var contactMessage = $('#form-contacto #Msg').val();
 
                 var data = 'Name=' + contactName + '&Phone=' + contactTelefono + '&Email=' + contactEmail + '&Msg=' + contactMessage;
                 setTimeout(function () {
