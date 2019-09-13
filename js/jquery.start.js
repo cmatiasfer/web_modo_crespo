@@ -233,12 +233,11 @@ function currentSection() {
     var edificios = $('#edificios').position().top - 100;
     var unidades = $('#unidades').position().top - 100;
     var amenities = $('#amenities').position().top - 100;
-    var contacto = $('#contacto').position().top - 100;
-    if ($(window).height() < 600) {
-        contacto = $('#contacto').position().top - ($(window).height() - 600);
-    }
+    var contacto = Math.floor($('#contacto').position().top) - ($(window).height() - 600);
+
 
     var windowTop = $(window).scrollTop();
+
     $(".menu-full a").removeClass("active");
     if (windowTop > ubicacion && windowTop < edificios) {
         console.log("estoy en ubicacion")
@@ -260,5 +259,4 @@ function currentSection() {
         console.log("estoy en contacto")
         $(".menu-full a[href='#contacto']").addClass("active");
     }
-    console.log($(window).scrollTop());
 }
