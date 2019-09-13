@@ -811,6 +811,10 @@ footer .b-partners .partner-com{
 
 /* MEDIUM */
 @media (min-width: 768px) and (max-width: 992px) {
+  .container-dots .title-image{
+    margin-left: 20px;
+  }
+  
   section.full-height{
 		height: calc(100vh - 256px);
 	}
@@ -849,6 +853,10 @@ footer .b-partners .partner-com{
   .text-mobile {
 		padding: 0px 40px;
 		text-align: center;
+  }
+  
+  .container-dots .title-image{
+    margin-left: 20px;
   }
   
   .content-img-text .col-text span.line{

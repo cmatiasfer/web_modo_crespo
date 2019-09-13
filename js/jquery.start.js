@@ -41,8 +41,9 @@ $(document).ready(function () {
         e.preventDefault();
         var href = $(this).attr('href');
         var listHref = href.split('#');
-        console.log(listHref);
+
         closeMenu();
+
         if (listHref.length > 1) {
             $('html, body').animate({
                 scrollTop: $('#' + listHref[1]).offset().top - 91
@@ -240,23 +241,18 @@ function currentSection() {
 
     $(".menu-full a").removeClass("active");
     if (windowTop > ubicacion && windowTop < edificios) {
-        console.log("estoy en ubicacion")
         $(".menu-full a[href='#ubicacion']").addClass("active");
     }
     if (windowTop >= edificios && windowTop < unidades) {
-        console.log("estoy en edificios")
         $(".menu-full a[href='#edificios']").addClass("active");
     }
     if (windowTop >= unidades && windowTop < amenities) {
-        console.log("estoy en unidades")
         $(".menu-full a[href='#unidades']").addClass("active");
     }
     if (windowTop >= amenities && windowTop < contacto) {
-        console.log("estoy en amenities")
         $(".menu-full a[href='#amenities']").addClass("active");
     }
     if (windowTop >= contacto) {
-        console.log("estoy en contacto")
         $(".menu-full a[href='#contacto']").addClass("active");
     }
 }
