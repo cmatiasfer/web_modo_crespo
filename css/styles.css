@@ -814,7 +814,7 @@ footer .b-partners .partner-com{
   .container-dots .title-image{
     margin-left: 20px;
   }
-  
+
   section.full-height{
 		height: calc(100vh - 256px);
 	}
@@ -864,6 +864,14 @@ footer .b-partners .partner-com{
     margin-right: auto;
 		margin-top: 40px;
 		margin-bottom: 20px;
+  }
+  
+  .container-dots .list-sliders {
+    width: 100%;
+    margin-left: 0!important;
+    padding-right: 20px!important;
+    display: flex;
+    justify-content: flex-end;
   }
   
   section.full-height{
@@ -932,7 +940,19 @@ footer .b-partners .partner-com{
 		margin-top: 40px;
 		margin-bottom: 20px;
 	}
-	
+  
+  .container-dots .title-image{
+    margin-left: 20px;
+  }
+  
+  .container-dots .list-sliders {
+    width: 100%;
+    margin-left: 0!important;
+    padding-right: 20px!important;
+    display: flex;
+    justify-content: flex-end;
+  }
+
 	#ubicacion .main-bg-image .title h2{
 		width: 226px;
 		height: 37px;
