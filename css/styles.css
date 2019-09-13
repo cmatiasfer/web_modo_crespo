@@ -73,6 +73,10 @@ a:hover,a:focus{
   color: #282C3F;
 }
 
+.menu-full nav a.active{
+  text-decoration: underline;
+}
+
 header{
   padding: 20px 10px;
   width: 100%;
@@ -140,7 +144,7 @@ header.mode-stick #btn-menu {
 }
 
 .menu-full.close{
-  left: 100vw;
+  left: 140vw;
 }
 
 .menu-full.open{
@@ -400,6 +404,39 @@ footer .b-partners .partner-com{
   color: #282C3F
 }
 
+.container-dots {
+  margin-top: 20px;
+  padding-bottom: 70px;
+}
+.container-dots .title-image{
+  font-family: 'MinionPro';
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.container-dots .list-sliders span.active{
+  border: 1px solid #282C3F!important;
+}
+
+.container-dots .list-sliders span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 200px;
+  font-size: 17px;
+  margin-left: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.container-dots .full-line{
+  margin-bottom: 0px!important;
+}
+
+
+
+
 /* UBICACION */
 #ubicacion .main-bg-image .title h2{
   text-indent: -9999px;
@@ -483,6 +520,11 @@ footer .b-partners .partner-com{
 }
 #unidades .data-unity .tipo{
   text-transform: uppercase;
+}
+#unidades .data-unity svg{
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 #unidades .data-unity span,
@@ -890,7 +932,7 @@ footer .b-partners .partner-com{
 
 	#amenities .main-bg-image .title h2{
 		width: 218px;
-		height: 30px;
+		height: 29px;
 	}
 
   footer {
@@ -954,6 +996,9 @@ footer .b-partners .partner-com{
 	#contacto .content-form{
 		width: 100%;
 		padding: 0px 15px;
-	}
+  }
+  .title-img.mb-space{
+    margin-left: 20px;
+  }
 }
 

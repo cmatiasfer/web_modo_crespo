@@ -1,7 +1,7 @@
 $(window).on('resize', function () {
 
     rowGutters();
-
+    removeClassContainer();
 });
 
 $(document).ready(function () {
@@ -10,14 +10,20 @@ $(document).ready(function () {
 
     resolveStatusHeader();
 
+    currentSection();
+
+    removeClassContainer();
+
     $(window).scroll(function () {
         resolveStatusHeader();
+        currentSection();
     });
 
 
     $(document).on('click', '#btn-menu', function () {
         $("header").attr('class', '');
         $("header").attr('class', 'mode-stick');
+        $("body").css("overflow", "hidden");
 
         $(".menu-full").removeClass('close');
         $(".menu-full").addClass('open');
@@ -28,6 +34,7 @@ $(document).ready(function () {
     $(document).on('click', '#btn-close', function () {
         resolveStatusHeader();
         closeMenu();
+        $("body").css("overflow", "auto");
     });
 
     $(document).on('click', 'nav a', function (e) {
@@ -43,7 +50,14 @@ $(document).ready(function () {
         }
     });
 
-    $('#edificios .slick').slick({
+    var sliderUbicacion = $('#ubicacion .slick').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    });
+
+    var sliderEdificios = $('#edificios .slick').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -57,9 +71,31 @@ $(document).ready(function () {
         arrows: false
     });
 
+    sliderUbicacion.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $("#ubicacion .list-sliders span").removeClass('active');
+        $("#ubicacion .list-sliders span[data-index='" + nextSlide + "']").addClass('active');
+    });
+
+    sliderEdificios.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $("#edificios .list-sliders span").removeClass('active');
+        $("#edificios .list-sliders span[data-index='" + nextSlide + "']").addClass('active');
+    });
+
     sliderUnidades.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         $(".data-unity").removeClass('active');
         $(".data-unity[data-index='" + nextSlide + "']").addClass('active');
+    });
+
+    $(".list-sliders span").click(function () {
+        var slider = $(this).attr('data-slider');
+        var indexSlider = $(this).attr('data-index');
+        $(this).parent().find('span').removeClass();
+        $(this).addClass('active');
+        if (slider == 'ubicacion') {
+            sliderUbicacion.slick('slickGoTo', indexSlider);
+        } else {
+            sliderEdificios.slick('slickGoTo', indexSlider);
+        }
     });
 
     if ($('#form-contacto')[0]) {
@@ -110,7 +146,7 @@ $(document).ready(function () {
                         success: function (ret) {
                             // Message was sent
                             if (ret.status == 'OK') {
-                                $('.response').html('<p>Muchas gracias! a la brevedad nos pondremos en contacto con usted!</p>');
+                                $('.response').html('<p>¡Muchas gracias! <br> A la brevedad nos pondremos en contacto con usted</p>');
                                 $('.response').show();
                             }
 
@@ -171,4 +207,54 @@ function rowGutters() {
         $(".row.grid-edificios").removeClass('no-gutters');
         $("#unidades .row").removeClass('no-gutters');
     }
+}
+
+function removeClassContainer() {
+    if ($(window).width() < 500 && $(window).height() > 400) {
+        $(".container").addClass("container-mobile");
+        setTimeout(function () {
+            $(".container-mobile").removeClass("container");
+        }, 100);
+
+    } else {
+        if ($(".container-mobile")[0]) {
+            $(".container-mobile").addClass("container");
+            setTimeout(function () {
+                $(".container").removeClass("container-mobile");
+            }, 100);
+
+        }
+
+    }
+}
+
+function currentSection() {
+    var ubicacion = $('#ubicacion').position().top - 100;
+    var edificios = $('#edificios').position().top - 100;
+    var unidades = $('#unidades').position().top - 100;
+    var amenities = $('#amenities').position().top - 100;
+    var contacto = $('#contacto').position().top - ($(window).height() - 600);
+    var windowTop = $(window).scrollTop();
+    $(".menu-full a").removeClass("active");
+    if (windowTop > ubicacion && windowTop < edificios) {
+        console.log("estoy en ubicacion")
+        $(".menu-full a[href='#ubicacion']").addClass("active");
+    }
+    if (windowTop >= edificios && windowTop < unidades) {
+        console.log("estoy en edificios")
+        $(".menu-full a[href='#edificios']").addClass("active");
+    }
+    if (windowTop >= unidades && windowTop < amenities) {
+        console.log("estoy en unidades")
+        $(".menu-full a[href='#unidades']").addClass("active");
+    }
+    if (windowTop >= amenities && windowTop < contacto) {
+        console.log("estoy en amenities")
+        $(".menu-full a[href='#amenities']").addClass("active");
+    }
+    if (windowTop >= contacto) {
+        console.log("estoy en contacto")
+        $(".menu-full a[href='#contacto']").addClass("active");
+    }
+    console.log($(window).scrollTop());
 }
