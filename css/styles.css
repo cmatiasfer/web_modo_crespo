@@ -416,6 +416,12 @@ footer .b-partners .partner-com{
   display: block;
 }
 
+.container-dots .list-sliders {
+  display: inline-block;
+  width: 100px;
+  margin-left: -50px;
+}
+
 .container-dots .list-sliders span.active{
   border: 1px solid #282C3F!important;
 }

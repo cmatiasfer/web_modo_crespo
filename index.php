@@ -300,7 +300,7 @@
 								M2 Semicubiertos: 7.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano1@.svg") ?>
+							<?php include("./img/planos/mini/miniplano1@.svg") ?>
 						</div>
 						<div class="data-unity" data-index="1">
 							<span class="unidad">UNIDAD 06</span>
@@ -314,7 +314,7 @@
 									M2 Semicubiertos: 5.7
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano6.svg") ?>
+							<?php include("./img/planos/mini/miniplano6.svg") ?>
 						</div>
 						<div class="data-unity" data-index="2">
 							<span class="unidad">UNIDAD 03</span>
@@ -328,7 +328,7 @@
 								M2 Semicubiertos: 2.9
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano3.svg") ?>
+							<?php include("./img/planos/mini/miniplano3.svg") ?>
 						</div>
 						<div class="data-unity" data-index="3">
 							<span class="unidad">UNIDAD 01</span>
@@ -343,7 +343,7 @@
 								M2 Descubiertos: 17.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano1.svg") ?>
+							<?php include("./img/planos/mini/miniplano1.svg") ?>
 						</div>
 						<div class="data-unity" data-index="4">
 							<span class="unidad">UNIDAD 04</span>
@@ -357,7 +357,7 @@
 								M2 Descubiertos: 3.0
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano4.svg") ?>
+							<?php include("./img/planos/mini/miniplano4.svg") ?>
 						</div>
 						<div class="data-unity" data-index="5">
 							<span class="unidad">UNIDAD 05</span>
@@ -371,7 +371,7 @@
 								M2 Descubiertos: 15.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano5.svg") ?>
+							<?php include("./img/planos/mini/miniplano5.svg") ?>
 						</div>
 						<div class="data-unity" data-index="6">
 							<span class="unidad">UNIDAD 04</span>
@@ -385,7 +385,7 @@
 								M2 Semicubiertos: 2.2
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano4b.svg") ?>
+							<?php include("./img/planos/mini/miniplano4b.svg") ?>
 						</div>
 						<div class="data-unity" data-index="7">
 							<span class="unidad">UNIDAD 05</span>
@@ -399,7 +399,7 @@
 								M2 Semicubiertos: 2.9
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include("img/planos/mini/miniplano5b.svg") ?>
+							<?php include("./img/planos/mini/miniplano5b.svg") ?>
 						</div>
 						
 					</div>
