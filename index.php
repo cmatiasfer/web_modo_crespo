@@ -304,7 +304,7 @@
 								M2 Semicubiertos: 7.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano1@.svg"; ?>
+							<?php include './img/planos/mini/miniplano1@.svg'; ?>
 						</div>
 						<div class="data-unity" data-index="1">
 							<span class="unidad">UNIDAD 06</span>
