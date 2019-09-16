@@ -21,6 +21,10 @@
 </head>
 <body>
 
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+		
 	<header>
 		<div class="container-fluid">
 			<div class="row">
@@ -318,7 +322,7 @@
 									M2 Semicubiertos: 5.7
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano6.svg"; ?>
+							<?php include "./img/planos/mini/miniplano2.svg"; ?>
 						</div>
 						<div class="data-unity" data-index="2">
 							<span class="unidad">UNIDAD 03</span>
@@ -337,7 +341,7 @@
 						<div class="data-unity" data-index="3">
 							<span class="unidad">UNIDAD 01</span>
 							<!-- <span class="piso">Piso 1º a 8º</span> -->
-							<span class="piso">Piso 1º</span>
+							<span class="piso">Piso 9º</span>
 							<span class="data-unity-line"></span>
 							<span class="tipo">2 Ambientes</span>
 							<span class="data-unity-line"></span>
@@ -351,7 +355,7 @@
 						</div>
 						<div class="data-unity" data-index="4">
 							<span class="unidad">UNIDAD 04</span>
-							<span class="piso">Piso 1º a 8º</span>
+							<span class="piso">Piso 9º</span>
 							<span class="data-unity-line"></span>
 							<span class="tipo">2 Ambientes</span>
 							<span class="data-unity-line"></span>
@@ -361,11 +365,11 @@
 								M2 Descubiertos: 3.0
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano4.svg"; ?>
+							<?php include "./img/planos/mini/unidad4piso9.svg"; ?>
 						</div>
 						<div class="data-unity" data-index="5">
 							<span class="unidad">UNIDAD 05</span>
-							<span class="piso">Piso 1º a 8º</span>
+							<span class="piso">Piso 9º</span>
 							<span class="data-unity-line"></span>
 							<span class="tipo">2 Ambientes</span>
 							<span class="data-unity-line"></span>
@@ -375,7 +379,7 @@
 								M2 Descubiertos: 15.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano5.svg"; ?>
+							<?php include "./img/planos/mini/unidad5piso9.svg"; ?>
 						</div>
 						<div class="data-unity" data-index="6">
 							<span class="unidad">UNIDAD 04</span>
@@ -410,12 +414,12 @@
 					<div class="col-md-7">
 						<div class="slick">
 							<div><span><img src="img/planos/plano1@.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano1.png" class="img-fluid plano" alt=""></span></div>
 							<div><span><img src="img/planos/plano2.png" class="img-fluid plano" alt=""></span></div>
 							<div><span><img src="img/planos/plano3.png" class="img-fluid plano" alt=""></span></div>
 							<div><span><img src="img/planos/plano4.png" class="img-fluid plano" alt=""></span></div>
 							<div><span><img src="img/planos/plano5.png" class="img-fluid plano" alt=""></span></div>
 							<div><span><img src="img/planos/plano6.png" class="img-fluid plano" alt=""></span></div>
+							<div><span><img src="img/planos/plano7.png" class="img-fluid plano" alt=""></span></div>
 							<div><span><img src="img/planos/plano5b.png" class="img-fluid plano" alt=""></span></div>
 						</div>
 					</div>

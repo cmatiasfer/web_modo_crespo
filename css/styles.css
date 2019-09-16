@@ -66,6 +66,36 @@ PALETTE COLOR
 BLUE : 282C3F
 menuopen : F7EDED
 */
+#preloader {
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  bottom: 0;
+  top: 0;
+  /* makes sure it stays on top */
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  z-index: 99999;
+}
+
+#status {
+  background-image: url(../img/ajax-loader.gif);
+  /* path to your loading animation */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  position: absolute;
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  width: 200px;
+  /* is width and height divided by two */
+}
+
 body{
   background-color: #F7EDED;
 }
