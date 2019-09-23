@@ -313,7 +313,9 @@
 								M2 Semicubiertos: 7.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include './img/planos/mini/miniplano1@.svg'; ?>
+							<div class="desk-miniplantas">
+								<?php include './img/planos/mini/miniplano1@.svg'; ?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="1">
 							<span class="unidad">UNIDAD 06</span>
@@ -327,7 +329,9 @@
 									M2 Semicubiertos: 5.7
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano2.svg"; ?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/miniplano2.svg"; ?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="2">
 							<span class="unidad">UNIDAD 03</span>
@@ -341,7 +345,9 @@
 								M2 Semicubiertos: 2.9
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano3.svg" ;?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/miniplano3.svg" ;?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="3">
 							<span class="unidad">UNIDAD 01</span>
@@ -356,7 +362,9 @@
 								M2 Descubiertos: 17.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano1.svg"; ?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/miniplano1.svg"; ?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="4">
 							<span class="unidad">UNIDAD 04</span>
@@ -370,7 +378,9 @@
 								M2 Descubiertos: 3.0
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/unidad4piso9.svg"; ?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/unidad4piso9.svg"; ?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="5">
 							<span class="unidad">UNIDAD 05</span>
@@ -384,7 +394,9 @@
 								M2 Descubiertos: 15.5
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/unidad5piso9.svg"; ?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/unidad5piso9.svg"; ?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="6">
 							<span class="unidad">UNIDAD 04</span>
@@ -398,7 +410,9 @@
 								M2 Semicubiertos: 2.2
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano4b.svg"; ?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/miniplano4b.svg"; ?>
+							</div>
 						</div>
 						<div class="data-unity" data-index="7">
 							<span class="unidad">UNIDAD 05</span>
@@ -412,20 +426,51 @@
 								M2 Semicubiertos: 2.9
 							</p>
 							<span class="data-unity-line"></span>
-							<?php include "./img/planos/mini/miniplano5b.svg"; ?>
+							<div class="desk-miniplantas">
+								<?php include "./img/planos/mini/miniplano5b.svg"; ?>
+							</div>
 						</div>
 						
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-8">
 						<div class="slick">
-							<div><span><img src="img/planos/plano1@.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano2.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano3.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano4.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano5.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano6.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano7.png" class="img-fluid plano" alt=""></span></div>
-							<div><span><img src="img/planos/plano5b.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano1@.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano2.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano3.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano4.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano5.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano6.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano7.png" class="img-fluid plano" alt=""></span></div>
+							<div><span class="content-image"><img src="img/planos/plano5b.png" class="img-fluid plano" alt=""></span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row lista-miniplantas">
+					<div class="col">
+						<div class="mobile-miniplantas" data-index="0">
+							<?php include './img/planos/mini/miniplano1@.svg'; ?>
+						</div>
+						<div class="mobile-miniplantas" data-index="1">
+							<?php include './img/planos/mini/miniplano2.svg'; ?>
+						</div>
+						<div class="mobile-miniplantas" data-index="2">
+							<?php include './img/planos/mini/miniplano3.svg'; ?>
+						</div>
+						<div class="mobile-miniplantas" data-index="3">
+							<?php include './img/planos/mini/miniplano1.svg'; ?>
+						</div>
+						<div class="mobile-miniplantas" data-index="4">
+							<?php include './img/planos/mini/unidad4piso9.svg'; ?>
+						</div>
+						<div class="mobile-miniplantas" data-index="5">
+							<?php include './img/planos/mini/unidad5piso9.svg'; ?>
+						</div>
+						<div class="mobile-miniplantas" data-index="6">
+							<?php include './img/planos/mini/miniplano4b.svg'; ?>	
+						</div>
+						<div class="mobile-miniplantas" data-index="7">
+							<?php include './img/planos/mini/miniplano5b.svg'; ?>	
 						</div>
 					</div>
 				</div>

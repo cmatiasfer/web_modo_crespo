@@ -10,6 +10,9 @@ $(window).on('resize', function () {
 
     rowGutters();
     removeClassContainer();
+    posicionMiniPlantas();
+    resetHeightSlick();
+
 });
 
 $(document).ready(function () {
@@ -21,6 +24,8 @@ $(document).ready(function () {
     currentSection();
 
     removeClassContainer();
+
+    posicionMiniPlantas();
 
     $(window).scroll(function () {
         resolveStatusHeader();
@@ -74,11 +79,18 @@ $(document).ready(function () {
         arrows: false
     });
 
+    $('#unidades .slick').on('init', function () {
+        setTimeout(function () {
+            resetHeightSlick();
+        }, 500);
+    });
+
+
     var sliderUnidades = $('#unidades .slick').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: true
     });
 
     sliderUbicacion.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -91,9 +103,16 @@ $(document).ready(function () {
         $("#edificios .list-sliders span[data-index='" + nextSlide + "']").addClass('active');
     });
 
+
+
     sliderUnidades.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var posicion = posicionMiniPlantas();
         $(".data-unity").removeClass('active');
         $(".data-unity[data-index='" + nextSlide + "']").addClass('active');
+        if (posicion == "bottom") {
+            $(".mobile-miniplantas").hide();
+            $(".mobile-miniplantas[data-index='" + nextSlide + "']").show();
+        }
     });
 
     $(".list-sliders span").click(function () {
@@ -176,6 +195,13 @@ $(document).ready(function () {
 
 });
 
+function resetHeightSlick() {
+    $("#unidades .slick").css("height", 'auto');
+    var height = $("#unidades .slick").height();
+    console.log(height);
+    $("#unidades .slick").css("height", height);
+}
+
 function isLoading() {
     var html = '<div class="preload"><div class="bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div></div>';
     return html;
@@ -184,6 +210,12 @@ function isLoading() {
 function isMobile() {
     var browser_mobile = (/android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
     var browser_touch = (/android|webos|iphone|ipod|ipad|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+
+    if (!browser_mobile) {
+        if ($(window).width() < 767) {
+            browser_mobile = true
+        }
+    }
     return browser_mobile;
 }
 
@@ -217,6 +249,24 @@ function rowGutters() {
         $(".row.grid-edificios").removeClass('no-gutters');
         $("#unidades .row").removeClass('no-gutters');
     }
+}
+
+function posicionMiniPlantas(firstExecution = true) {
+    var posicion = "";
+    if (isMobile()) {
+        $(".desk-miniplantas").hide();
+        $(".lista-miniplantas").show();
+        if (firstExecution == true) {
+            $(".lista-miniplantas").find(".mobile-miniplantas").hide();
+            $(".lista-miniplantas").find(".mobile-miniplantas[data-index='0']").show();
+        }
+        posicion = "bottom";
+    } else {
+        $(".desk-miniplantas").show();
+        $(".lista-miniplantas").hide();
+        posicion = "left";
+    }
+    return posicion
 }
 
 function removeClassContainer() {

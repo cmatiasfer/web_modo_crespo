@@ -576,17 +576,45 @@ footer .b-partners .partner-com{
 
 
 #unidades img.plano{
-  width: 500px;
-  margin: auto;
-}
-/* #unidades .slick {
   width: 100%;
+  margin: auto;
+  padding: 0px 40px;
 }
 
-#unidades .slick span {
-  display: block;
-} */
+#unidades .slick{
+  margin-bottom: 40px;
+}
+#unidades .lista-miniplantas{
+  max-width: 60%;
+  margin: 0px auto 40px;
+}
+#unidades .slick .slick-list, #unidades .slick .slick-list .slick-track{
+  height: 100%;
+}
+#unidades .slick .slick-list .content-image{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#unidades .slick-prev{
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow-left.svg);
+}
 
+#unidades .slick-next{
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow-rigth.svg);
+}
+
+#unidades .slick-next:before,
+#unidades .slick-prev:before{
+  content: '';
+}
 /* AMENITIES */
 #amenities .main-bg-image .title h2{
   text-indent: -9999px;
