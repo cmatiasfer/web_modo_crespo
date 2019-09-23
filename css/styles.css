@@ -602,6 +602,7 @@ footer .b-partners .partner-com{
   width: 40px;
   height: 40px;
   background-image: url(../img/arrow-left.svg);
+  z-index: 10;
 }
 
 #unidades .slick-next{
@@ -609,6 +610,7 @@ footer .b-partners .partner-com{
   width: 40px;
   height: 40px;
   background-image: url(../img/arrow-rigth.svg);
+  z-index: 10;
 }
 
 #unidades .slick-next:before,
